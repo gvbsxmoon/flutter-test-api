@@ -1,12 +1,14 @@
 {
-  "name": "audi_api",
+  "name": "flutter_test_api",
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/swagger": "^0.6.2",
+    "elysia": "latest",
+    "jsonwebtoken": "8.5.1"
   },
   "devDependencies": {
     "bun-types": "latest"

@@ -1,17 +1,18 @@
 ## FLUTTER TEST API
 
-Si consiglia di utilizzare lo swagger a disposizione per visualizzare le API e testarle.
+Si consiglia di utilizzare lo swagger a disposizione per visualizzare gli endpoint e testarli.
 
 ### Prerequisiti
 
 Nessun prerequisito richiesto.
-Tirar su il docker e si è pronti per testare le API.
+
+### Installazione
 
 - aprire docker da desktop o lanciare il demone da terminale
 - da terminale, posizionarsi nella cartella del progetto e lanciare il comando `docker build -t flutter-test-api .`
 - lanciare il comando `docker run -d --name test-container -p 3000:3000 flutter-test-api`
 
-da questo momento in poi al path `localhost:3000/swagger` è possibile testare le API.
+da questo momento in poi al path `localhost:3000/swagger` è possibile testare l'API.
 
 - per terminare il container, lanciare il comando `docker stop test-container`
 

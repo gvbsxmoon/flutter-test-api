@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const secret: string = require('crypto').randomBytes(64).toString('hex');
 
 export const generateAuthToken = (id: string): string => {
-	return jwt.sign({ id }, secret, { expiresIn: '7d' });
+	return jwt.sign({ id }, secret, { expiresIn: '604800s' });
 };
 
 export const verifyAuthToken = (headers: any): boolean => {
